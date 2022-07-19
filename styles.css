@@ -25,6 +25,10 @@ h1{
     border-top-color: currentcolor;
     border-radius: 4px;
 }
+#emptyInput{
+    display: none;
+    color: red;
+}
 #myUL{
     width: 311px;
     margin: 0 auto;

@@ -11,11 +11,17 @@ function save(){
 
 function addItems(){
     var myInput = document.getElementById("myInput").value;
+    if( myInput == ""){
+        document.getElementById("emptyInput").style.display="block";
+        }
+        else{
+            list.push({name:myInput,completed:false});
+            document.getElementById("emptyInput").style.display="none";
+
+            save();
+            showItems();
+        }
     
-    
-    list.push({name:myInput,completed:false});
-    save();
-    showItems();
 
     document.getElementById("myInput").value = "";
 }
