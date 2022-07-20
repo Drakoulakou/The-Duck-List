@@ -39,9 +39,9 @@ function toggle(index) {
 }
 
 function deleteAllItems(){
+    list=[];
     save();
-    document.getElementById("myUL").innerHTML = '';
-
+    showItems();    
 }
 
 function showItems(){
