@@ -47,8 +47,8 @@ function deleteAllItems(){
 function showItems(){
     var myList='';
     for (var i=0; i<list.length; i++){
-        var deleteButton = "<button class='button deleteBtn' onClick=deleteItem("+i+")>✕</button>"
-        var completedButton = "<button class='button completedBtn' onClick=toggle("+i+")>✓</button>"
+        var deleteButton = `<button class='button deleteBtn' onclick=deleteItem(${i})>✕</button>`
+        var completedButton = `<button class='button completedBtn' onclick=toggle(${i})>✓</button>`
         if (list[i].completed){
             myList+=
             `<li class='list completed'>  
